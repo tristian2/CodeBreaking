@@ -40,8 +40,8 @@ namespace CodeBreaking
                 {
                     newMessage.Append("<div>"+line+"</div>");
                 }
-                newMessage.Replace("0", Convert.ToUInt16(9608).ToString());
-                newMessage.Replace("1", Convert.ToUInt16(9633).ToString());
+                newMessage.Replace("0", "&#9608");
+                newMessage.Replace("1", "&#9633");
 
                 File.AppendAllText(path, newMessage.ToString());
                 Console.WriteLine(newMessage.ToString());
